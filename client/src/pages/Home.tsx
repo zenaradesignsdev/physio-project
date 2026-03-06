@@ -160,20 +160,6 @@ export default function Home() {
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
-
-            {/* Trust Badges */}
-            <div className="flex flex-wrap gap-3">
-              {[
-                { icon: Shield, text: "Licensed Physiotherapists" },
-                { icon: CheckCircle, text: "Evidence-Based Treatment" },
-                { icon: Users, text: "500+ Patients Helped" },
-              ].map(({ icon: Icon, text }) => (
-                <div key={text} className="flex items-center gap-2 bg-white/15 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2">
-                  <Icon className="w-4 h-4 text-[#99F6E4]" />
-                  <span className="text-white text-sm font-medium">{text}</span>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
 
@@ -310,8 +296,8 @@ export default function Home() {
                 key={item.title}
                 className={`fade-up delay-${Math.min((i + 1) * 100, 600)} bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300`}
               >
-                <div className="w-11 h-11 rounded-xl bg-[#99F6E4]/20 flex items-center justify-center mb-4">
-                  <item.icon className="w-5 h-5 text-[#99F6E4]" />
+                <div className="w-12 h-12 rounded-full bg-[#99F6E4] flex items-center justify-center mb-4 shadow-lg">
+                  <span className="text-[#0F766E] font-extrabold text-xl">{i + 1}</span>
                 </div>
                 <h3 className="font-bold text-white text-base mb-2">{item.title}</h3>
                 <p className="text-white/65 text-sm leading-relaxed">{item.desc}</p>

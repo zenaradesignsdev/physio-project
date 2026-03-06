@@ -38,7 +38,6 @@ export default function Contact() {
     insurance: "",
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [submitted, setSubmitted] = useState(false);
 
   const validate = () => {
     const newErrors: Record<string, string> = {};
@@ -57,9 +56,25 @@ export default function Contact() {
       setErrors(validationErrors);
       return;
     }
-    setErrors({});
-    setSubmitted(true);
+    
+    // Show success message
     toast.success("Appointment request sent! We'll contact you within 24 hours.");
+    
+    // Clear the form
+    setForm({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      service: "",
+      preferredDate: "",
+      preferredTime: "",
+      message: "",
+      insurance: "",
+    });
+    setErrors({});
+    
+    // Do nothing else - this is just an example site
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -197,24 +212,7 @@ export default function Contact() {
             {/* Booking Form */}
             <div className="lg:col-span-2">
               <div className="bg-white rounded-3xl shadow-sm border border-gray-100 p-8 md:p-10">
-                {submitted ? (
-                  <div className="text-center py-12">
-                    <div className="w-20 h-20 rounded-full bg-[#0F766E]/10 flex items-center justify-center mx-auto mb-5">
-                      <CheckCircle className="w-10 h-10 text-[#0F766E]" />
-                    </div>
-                    <h3 className="text-2xl font-extrabold text-[#1F2937] mb-3">Request Received!</h3>
-                    <p className="text-gray-500 mb-6 max-w-sm mx-auto">
-                      Thank you, {form.firstName}! Our team will review your request and contact you within 24 hours to confirm your appointment.
-                    </p>
-                    <button
-                      onClick={() => { setSubmitted(false); setForm({ firstName: "", lastName: "", email: "", phone: "", service: "", preferredDate: "", preferredTime: "", message: "", insurance: "" }); }}
-                      className="bg-[#0F766E] hover:bg-[#0d9488] text-white font-semibold px-7 py-3 rounded-full transition-all duration-300"
-                    >
-                      Book Another Appointment
-                    </button>
-                  </div>
-                ) : (
-                  <>
+                <>
                     <div className="flex items-center gap-3 mb-8">
                       <div className="w-10 h-10 rounded-xl bg-[#0F766E] flex items-center justify-center">
                         <Calendar className="w-5 h-5 text-white" />
@@ -386,8 +384,7 @@ export default function Contact() {
                         By submitting this form, you agree to our privacy policy. We'll never share your information with third parties.
                       </p>
                     </form>
-                  </>
-                )}
+                </>
               </div>
             </div>
           </div>
