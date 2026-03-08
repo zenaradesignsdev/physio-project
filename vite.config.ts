@@ -1,6 +1,7 @@
 import { jsxLocPlugin } from "@builder.io/vite-plugin-jsx-loc";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
+import { imagetools } from "vite-imagetools";
 import path from "node:path";
 import { defineConfig } from "vite";
 
@@ -8,6 +9,7 @@ const plugins = [
   react(),
   tailwindcss(),
   jsxLocPlugin(),
+  imagetools(),
 ];
 
 export default defineConfig({
