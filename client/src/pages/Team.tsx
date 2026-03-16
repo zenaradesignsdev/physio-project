@@ -6,13 +6,13 @@ const TEAM_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663407703240/EpUJ8
 
 const team = [
   {
-    name: "Dr. Sarah Chen",
+    name: "Dr. Sofia Morales",
     title: "Lead Physiotherapist & Clinic Director",
     credentials: "DPT, FCAMPT, BScKin",
     specialty: "Sports & Orthopedic Rehabilitation",
-    img: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=700&fit=crop&crop=face",
-    bio: "Dr. Sarah Chen brings over 12 years of clinical experience to Nova Motion Physiotherapy, where she serves as both Lead Physiotherapist and Clinic Director. She completed her Doctor of Physiotherapy at the University of British Columbia and subsequently earned her Fellowship of the Canadian Academy of Manipulative Physiotherapy (FCAMPT) — one of the most rigorous post-graduate credentials in the field.",
-    bio2: "Sarah's practice philosophy centers on the belief that every patient deserves a thorough assessment and a treatment plan built around their unique body, lifestyle, and goals. She has a particular passion for complex orthopedic cases and helping athletes return to sport after significant injuries.",
+    img: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=700&fit=crop&crop=face",
+    bio: "Dr. Sofia Morales brings over 12 years of clinical experience to Nova Motion Physiotherapy, where she serves as both Lead Physiotherapist and Clinic Director. She completed her Doctor of Physiotherapy at the University of British Columbia and subsequently earned her Fellowship of the Canadian Academy of Manipulative Physiotherapy (FCAMPT) — one of the most rigorous post-graduate credentials in the field.",
+    bio2: "Sofia's practice philosophy centers on the belief that every patient deserves a thorough assessment and a treatment plan built around their unique body, lifestyle, and goals. She has a particular passion for complex orthopedic cases and helping athletes return to sport after significant injuries.",
     education: [
       "Doctor of Physiotherapy (DPT) — University of British Columbia",
       "Bachelor of Science in Kinesiology — Simon Fraser University",
@@ -20,16 +20,16 @@ const team = [
     ],
     specialties: ["ACL Rehabilitation", "Shoulder Instability", "Manual Therapy", "Running Biomechanics", "Chronic Pain Management"],
     languages: ["English", "Mandarin"],
-    funFact: "Sarah is a recreational triathlete who has completed two Ironman events.",
+    funFact: "Sofia is a recreational triathlete who has completed two Ironman events.",
   },
   {
-    name: "Dr. Michael Patel",
+    name: "Dr. James Harper",
     title: "Senior Physiotherapist",
     credentials: "DPT, CGIMS, OCS",
     specialty: "Neurological & Complex Rehabilitation",
-    img: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&h=700&fit=crop&crop=face",
-    bio: "Dr. Michael Patel is a Senior Physiotherapist at Nova Motion with a specialized focus on neurological rehabilitation and complex musculoskeletal conditions. He earned his Doctor of Physiotherapy from McGill University and has since completed advanced certifications in Gunn Intramuscular Stimulation (CGIMS) and Orthopedic Clinical Specialization (OCS).",
-    bio2: "Michael's approach combines meticulous clinical reasoning with a warm, patient-centered communication style. He has extensive experience working with patients recovering from strokes, traumatic brain injuries, spinal cord conditions, and complex post-surgical cases. His dry needling expertise has helped hundreds of patients find relief from chronic pain conditions.",
+    img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=700&fit=crop&crop=face",
+    bio: "Dr. James Harper is a Senior Physiotherapist at Nova Motion with a specialized focus on neurological rehabilitation and complex musculoskeletal conditions. He earned his Doctor of Physiotherapy from McGill University and has since completed advanced certifications in Gunn Intramuscular Stimulation (CGIMS) and Orthopedic Clinical Specialization (OCS).",
+    bio2: "James's approach combines meticulous clinical reasoning with a warm, patient-centered communication style. He has extensive experience working with patients recovering from strokes, traumatic brain injuries, spinal cord conditions, and complex post-surgical cases. His dry needling expertise has helped hundreds of patients find relief from chronic pain conditions.",
     education: [
       "Doctor of Physiotherapy (DPT) — McGill University",
       "Certified in Gunn Intramuscular Stimulation (CGIMS)",
@@ -37,16 +37,16 @@ const team = [
     ],
     specialties: ["Neurological Rehabilitation", "Dry Needling / IMS", "Spinal Cord Injuries", "Post-Stroke Recovery", "Chronic Pain"],
     languages: ["English", "Hindi", "Gujarati"],
-    funFact: "Michael volunteers as a physiotherapy consultant for a local adaptive sports program.",
+    funFact: "James volunteers as a physiotherapy consultant for a local adaptive sports program.",
   },
   {
-    name: "Dr. Emily Rodriguez",
+    name: "Dr. Emma Walsh",
     title: "Physiotherapist",
     credentials: "DPT, PRPC, Pelvic Health Cert.",
     specialty: "Pelvic Health & Women's Health",
-    img: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=600&h=700&fit=crop&crop=face",
-    bio: "Dr. Emily Rodriguez is a passionate advocate for pelvic health physiotherapy — a field that addresses conditions that profoundly impact quality of life but are often undertreated. She completed her Doctor of Physiotherapy at Dalhousie University and holds a Pelvic Rehabilitation Practitioner Certification (PRPC) from the Herman & Wallace Pelvic Rehabilitation Institute.",
-    bio2: "Emily creates a safe, respectful, and empowering environment for her patients. She specializes in treating pelvic floor dysfunction, pre- and post-natal rehabilitation, incontinence, pelvic pain, and endometriosis-related conditions. She also has strong expertise in general orthopedic physiotherapy, particularly hip and lower extremity conditions.",
+    img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&h=700&fit=crop&crop=face",
+    bio: "Dr. Emma Walsh is a passionate advocate for pelvic health physiotherapy — a field that addresses conditions that profoundly impact quality of life but are often undertreated. She completed her Doctor of Physiotherapy at Dalhousie University and holds a Pelvic Rehabilitation Practitioner Certification (PRPC) from the Herman & Wallace Pelvic Rehabilitation Institute.",
+    bio2: "Emma creates a safe, respectful, and empowering environment for her patients. She specializes in treating pelvic floor dysfunction, pre- and post-natal rehabilitation, incontinence, pelvic pain, and endometriosis-related conditions. She also has strong expertise in general orthopedic physiotherapy, particularly hip and lower extremity conditions.",
     education: [
       "Doctor of Physiotherapy (DPT) — Dalhousie University",
       "Pelvic Rehabilitation Practitioner Certification (PRPC) — Herman & Wallace Institute",
@@ -54,7 +54,7 @@ const team = [
     ],
     specialties: ["Pelvic Floor Rehabilitation", "Pre & Postnatal Care", "Incontinence Treatment", "Hip & Knee Rehabilitation", "Women's Health"],
     languages: ["English", "Spanish"],
-    funFact: "Emily is a certified yoga instructor and integrates mindfulness principles into her treatment approach.",
+    funFact: "Emma is a certified yoga instructor and integrates mindfulness principles into her treatment approach.",
   },
 ];
 
@@ -62,7 +62,7 @@ export default function Team() {
   return (
     <PageLayout
       title="Our Team"
-      description="Meet the expert physiotherapists at Nova Motion — Dr. Sarah Chen, Dr. Michael Patel, and Dr. Emily Rodriguez. Credentialed, compassionate, and dedicated to your recovery."
+      description="Meet the expert physiotherapists at Nova Motion — Dr. Sofia Morales, Dr. James Harper, and Dr. Emma Walsh. Credentialed, compassionate, and dedicated to your recovery."
     >
       {/* Hero */}
       <section className="pt-32 pb-16 bg-gradient-to-br from-[#0F766E] to-[#0d9488] relative overflow-hidden">

@@ -33,25 +33,28 @@ const whyUs = [
 
 const team = [
   {
-    name: "Dr. Sarah Chen",
+    name: "Dr. Sofia Morales",
     title: "Lead Physiotherapist",
     specialty: "Sports & Orthopedic Rehab",
     credentials: "DPT, FCAMPT",
-    img: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&crop=face",
+    img: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop&crop=face",
+    imgPosition: "object-center",
   },
   {
-    name: "Dr. Michael Patel",
+    name: "Dr. James Harper",
     title: "Senior Physiotherapist",
     specialty: "Neurological Rehabilitation",
     credentials: "DPT, CGIMS",
-    img: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop&crop=face",
+    img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face",
+    imgPosition: "object-top",
   },
   {
-    name: "Dr. Emily Rodriguez",
+    name: "Dr. Emma Walsh",
     title: "Physiotherapist",
     specialty: "Pelvic Health & Women's Health",
     credentials: "DPT, PRPC",
-    img: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop&crop=face",
+    img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face",
+    imgPosition: "object-center",
   },
 ];
 
@@ -65,7 +68,7 @@ const testimonials = [
   {
     name: "Jennifer M.",
     role: "Marathon Runner",
-    text: "After my ACL surgery, I was terrified I'd never run again. Dr. Chen's program had me back on the trails in 8 months. The care here is exceptional.",
+    text: "After my ACL surgery, I was terrified I'd never run again. Dr. Morales's program had me back on the trails in 8 months. The care here is exceptional.",
     rating: 5,
     img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face",
   },
@@ -337,7 +340,7 @@ export default function Home() {
                   <img
                     src={member.img}
                     alt={member.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className={`w-full h-full object-cover ${member.imgPosition} group-hover:scale-105 transition-transform duration-500`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0F766E]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
